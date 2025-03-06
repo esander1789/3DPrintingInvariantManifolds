@@ -1,6 +1,6 @@
 # 3D Printing of Invariant Manifolds in Dynamical Systems
 
-![Stable manifold of the Lorenz equation](path/to/lorenz_manifold_image.png)
+![Stable manifold of the Lorenz equation](images/IMG_2078.jpeg)
 
 ## Overview
 
@@ -26,7 +26,7 @@ Given the highly nonlinear nature of specific dynamical systems, we employ a div
 
 ### Primary Software
 - **Wolfram Mathematica®** for core computations and manifold generation
-- **MATLAB** for specialized numerical analysis and mesh processing
+- **MATLAB** for specialized numerical analysis
 
 ### Supporting Tools
 - **CAD Software**
@@ -42,7 +42,6 @@ Given the highly nonlinear nature of specific dynamical systems, we employ a div
 - Example scripts for the Lorenz, Arneodo-Coullet-Tresser, and Langford systems
 - Utility functions for mesh/surface generation and file export
 - Documentation and usage examples
-- Sample parameter files and test cases
 
 ## Examples
 
@@ -64,10 +63,6 @@ If you use this software or methodology in your research, please cite our paper:
 ```
 3D Printing of Invariant Manifolds in Dynamical Systems. [Authors], 2025.
 ```
-
-## Contributing
-
-Users are encouraged to submit issues, feature requests, and contribute improvements through pull requests. For detailed usage instructions and documentation, please refer to the repository's README file and accompanying documentation. The code is released under the MIT License to promote open scientific collaboration and reproducibility.
 
 ## Contact
 
