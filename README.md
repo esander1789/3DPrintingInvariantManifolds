@@ -1,6 +1,8 @@
 # 3D Printing of Invariant Manifolds in Dynamical Systems
 
-<img src="images/IMG_2078.jpeg" alt="Stable manifold of the Lorenz equation" width="400">
+<p align="center">
+  <img src="images/IMG_2078.jpeg" alt="Stable manifold of the Lorenz equation" width="800">
+</p>
 
 ## Overview
 
