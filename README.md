@@ -58,7 +58,7 @@ Implementation of the Arneodo-Coullet-Tresser system
 - `makemanifoldArneodo2.nb`: Mathematica notebook for generating Arneodo manifolds
 
 #### LangfordSystem
-Code for the Langford dynamical system, including stable manifold calculations
+Code for the Langford system, including stable/unstable manifold calculations
 - `TriFundDomES.m`: Triangulate fundamental domain for the Langford system
 - `driver_writepoints.m`: Driver script for writing unstable manifold points for alpha = 1.1022
 - `driver_writepoints_stable.m`: Driver script for stable manifold calculations for alpha = 1.1022
@@ -80,7 +80,7 @@ Miscellaneous files related to the Langford system with various parameter values
 - `makemfldSurfaceVaryParameter.nb`: Consolidated Mathematica notebook for creating surface-method manifolds with varying parameters
 
 #### LorenzManifoldPoints
-Point data and code for Lorenz manifold visualizations and 3D printing
+Point data and code for Lorenz stable manifold visualizations and 3D printing
 - `LorenzF.m`: Lorenz system function implementation
 - `driver_Lorenz_Disc.m`: Driver script for Lorenz disc computation
 - `getCoeffsLorenz.m`: Function to compute coefficients for the Lorenz system
