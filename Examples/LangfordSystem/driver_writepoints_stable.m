@@ -18,7 +18,7 @@ r = roots(p);
 
 %Equilibria:
 p0 = [0;0;r(2)];
-               
+
 %Choose an equilibrium point to compute manifolds:
 p = p0;
 
