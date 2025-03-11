@@ -36,6 +36,7 @@ Our work addresses the challenges of translating complex manifolds into printabl
 - The Lorenz attractor
 - Arneodo-Coullet-Tresser equations 
 - Langford system
+
 These examples demonstrate the physical realization of intersecting global manifolds, showing stable manifolds of equilibrium solutions intersecting unstable manifolds of other equilibrium solutions, revealing complex geometric organizations and their intersections.
 
 ## Repository Structure
