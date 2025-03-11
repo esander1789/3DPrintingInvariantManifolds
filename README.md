@@ -31,6 +31,13 @@ Given the highly nonlinear nature of specific dynamical systems, we employ a div
   - Cura for slicing and print preparation
 - **Custom numerical algorithms** for manifold computation and structural optimization
 
+## Examples
+Our work addresses the challenges of translating complex manifolds into printable meshes, showcasing results for:
+- The Lorenz attractor
+- Arneodo-Coullet-Tresser equations 
+- Langford system
+These examples demonstrate the physical realization of intersecting global manifolds, showing stable manifolds of equilibrium solutions intersecting unstable manifolds of other equilibrium solutions, revealing complex geometric organizations and their intersections.
+
 ## Repository Structure
 ```
 3DPrintingInvariantManifolds/
@@ -96,16 +103,6 @@ Ready-to-print files for 3D printing manifolds
 - `lorenzBIG.stl`: Large-scale STL file for Lorenz stable manifold
 - `lorenzSM.obj`: OBJ format file for Lorenz stable manifold (small version)
 - `lorenzSM.stl`: STL format file for Lorenz stable manifold (small version)
-
-## Examples
-Our work addresses the challenges of translating complex manifolds into printable meshes, showcasing results for:
-- The Lorenz attractor
-- Arneodo-Coullet-Tresser equations 
-- Langford system
-These examples demonstrate the physical realization of intersecting global manifolds, showing stable manifolds of equilibrium solutions intersecting unstable manifolds of other equilibrium solutions, revealing complex geometric organizations and their intersections.
-
-## Getting Started
-Please refer to the documentation directory for detailed usage instructions and examples.
 
 ## Citing This Work
 If you use this software or methodology in your research, please cite our paper:
