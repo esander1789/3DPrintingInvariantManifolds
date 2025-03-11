@@ -106,9 +106,10 @@ Ready-to-print files for 3D printing manifolds
 ## Citing This Work
 If you use this software or methodology in your research, please cite our paper:
 ```
-3D Printing of Invariant Manifolds in Dynamical Systems. 
+3D Printing of Invariant Manifolds in Dynamical Systems.
 Patrick R. Bishop, Summer Chenoweth, Emmanuel Fleurantin, 
 Alonso G. Oguedo Oliva, Evelyn Sander, and Julia A. Seay, 2025.
+arXiv:[identifier]
 ```
 
 ## Contact
