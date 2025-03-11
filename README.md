@@ -104,7 +104,7 @@ Ready-to-print files for 3D printing manifolds
 - `lorenzSM.stl`: STL format file for Lorenz stable manifold (small version)
 
 ## Citing This Work
-If you use this software or methodology in your research, please cite our paper:
+If you use our codes or methodology in your research, please cite our paper:
 ```
 3D Printing of Invariant Manifolds in Dynamical Systems.
 Patrick R. Bishop, Summer Chenoweth, Emmanuel Fleurantin, 
