@@ -106,7 +106,7 @@ Ready-to-print files for 3D printing manifolds
 ## Citing This Work
 If you use our codes or methodology in your research, please cite our paper:
 ```
-Bishop, P. R., Chenoweth, S., Fleurantin, E., Ogueda-Oliva, A. G., Sander, E., & Seay, J. A. (2025). 3D Printing of Invariant Manifolds in Dynamical Systems. arXiv:2504.15884 [math.DS].
+Bishop, P. R., Chenoweth, S., Fleurantin, E., Ogueda-Oliva, A. G., Sander, E., & Seay, J. A. (2025). 3D Printing of Invariant Manifolds in Dynamical Systems. arXiv:2504.15884 [math.DS]. https://doi.org/10.48550/arXiv.2504.15884
 ```
 
 ## Contact
