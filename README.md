@@ -92,7 +92,7 @@ Point data and code for Lorenz stable manifold visualizations and 3D printing
 - `getCoeffsLorenz.m`: Function to compute coefficients for the Lorenz system
 - `lorenzDifferential.m`: Jacobian for the Lorenz system
 - `lorenzdiscws.csv`: CSV data file with Lorenz disc points
-- `makelorenzmfldScaled_LATEST.nb`: Mathematica notebook for generating scaled Lorenz manifolds
+- `makelorenzmanifold.nb`: Mathematica notebook for generating scaled Lorenz manifolds
 
 #### PrintableFiles
 Ready-to-print files for 3D printing manifolds
