@@ -46,5 +46,5 @@ function SM = getCoeffsArneodo(p,Dfp,lambda_s1, lambda_s2, xi_s1, xi_s2, N, scal
  SM = P;
 
  figure
- hold on
- plot([0:N], log(coeffDecay)/log(10))
+semilogy((0:N)',coeffDecay)
+title('coefficient decay'); 

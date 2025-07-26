@@ -84,6 +84,7 @@ hold on
 plot3(Wu_loc(1, :)', Wu_loc(2, :)', Wu_loc(3, :)', 'r.')
 plot3(lastRow(1, :)', lastRow(2, :)', lastRow(3, :)', 'b.','MarkerSize',10)
 set(gcf,'color','w')
+title('Local unstable manifold')
 
 % Save last row of Wu_loc
 itstartpoints = lastRow';
