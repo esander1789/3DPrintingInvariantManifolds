@@ -57,7 +57,8 @@ The `Examples` directory contains implementations and data files for various dyn
 #### Arneodo-Coullet-Tresser
 Implementation of the Arneodo-Coullet-Tresser system
 - `Arneodo_main.m`: Main script for Arneodo system. 
-Requires `ArneodoDifferential.m` and `getCoeffsArneodo.m` to run. Produces `itstartpoints_arn0863.csv`
+	- Requires `ArneodoDifferential.m` and `getCoeffsArneodo.m` to run. 
+	- Produces `itstartpoints_arn0863.csv`
 - `ArneodoDifferential.m`: Jacobian for the Arneodo system
 - `ArneodoF.m`: Arneodo system function implementation
 - `getCoeffsArneodo.m`: Function for computing coefficients for the Arneodo system
