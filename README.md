@@ -56,12 +56,14 @@ The `Examples` directory contains implementations and data files for various dyn
 
 #### Arneodo-Coullet-Tresser
 Implementation of the Arneodo-Coullet-Tresser system
+- `Arneodo_main.m`: Main script for Arneodo system. 
+Requires `ArneodoDifferential.m` and `getCoeffsArneodo.m` to run. Produces `itstartpoints_arn0863.csv`
 - `ArneodoDifferential.m`: Jacobian for the Arneodo system
 - `ArneodoF.m`: Arneodo system function implementation
-- `Arneodo_main.m`: Main script for Arneodo system
 - `getCoeffsArneodo.m`: Function for computing coefficients for the Arneodo system
 - `itstartpoints_arn0863.csv`: CSV data file with starting points
-- `makemanifoldArneodo2.nb`: Mathematica notebook for generating Arneodo manifolds
+- `makemanifoldArneodo2.nb`: Mathematica notebook for generating Arneodo manifolds. 
+Requires `itstartpoints_arn0863.csv`. Produces `Arneodo0863.stl` (or after uncommenting, `Arneodo0863.obj`). 
 
 #### LangfordSystem
 Code for the Langford system, including stable/unstable manifold calculations
