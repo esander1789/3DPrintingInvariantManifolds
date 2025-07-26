@@ -5,7 +5,7 @@ tic
 %% Getting the Coefficients
 
 %Langford Parameters:
-alpha = 0.95;
+alpha = 1.1022;
 beta = 0.7;
 delta = 3.5;
 gamma = 0.6;
@@ -17,7 +17,7 @@ p = [-1/3 0 alpha gamma];
 r = roots(p);
 
 %Equilibria:
-p0 = [0;0;r(2)];
+p0 = [0;0;r(3)];
 
 %Choose an equilibrium point to compute manifolds:
 p = p0;
@@ -26,7 +26,7 @@ Dfp = DifferentialF(p, ...
     epsilon, alpha, gamma, delta, beta, zeta);
           
 [Q, Lambda] = eigs(Dfp);
-return  
+
  %The names of the eigenvalues have to be
  %set by hand:
 
@@ -60,13 +60,10 @@ the_theta = linspace(0, 2*pi, numTheta);
 
  numPoints = numR*numTheta;
  
- Wu_loc = zeros(3, numPoints);
+ W_loc = zeros(3, numPoints);
  
  pointNum = 1;
  for m = 1:numR
-     
-     m
-     numR
      for n = 1:numTheta
          
         this_r = the_rs(m);
@@ -85,14 +82,18 @@ the_theta = linspace(0, 2*pi, numTheta);
             end
         end
      
-        Wu_loc(:, pointNum) = real(thisPoint);
+        W_loc(:, pointNum) = real(thisPoint);
         pointNum = pointNum + 1;
      end
      
  end
 
-itstartpoints = Wu_loc';
- 
-save(sprintf('itstartpoints11022u.csv'), 'itstartpoints', '-ascii');
+itstartpoints = W_loc';
+
+figure; 
+plot3(W_loc(1,:),W_loc(2,:),W_loc(3,:))
+title('Edge of local manifold')
+
+save(sprintf('itstartpoints11022s.csv'), 'itstartpoints', '-ascii');
 
 

@@ -56,6 +56,10 @@ TriFundDomES
 vertices_u = vertices_uFD;
 
 itstartpoints = vertices_u(1:numBDpoints,:);
+
+figure; 
+plot3(itstartpoints(:,1),itstartpoints(:,2),itstartpoints(:,3))
+title('edge of local manifold')
  
 save(sprintf('itstartpoints11022u.csv'), 'itstartpoints', '-ascii');
 
