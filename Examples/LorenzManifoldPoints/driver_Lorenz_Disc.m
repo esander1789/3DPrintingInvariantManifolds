@@ -65,7 +65,7 @@ for r = linspace(0, 1, numRadial)
     end
 end
 
-border_indices = [numPoints-(numAngular-1)+1:numPoints];  
+border_indices = [numPoints-(numAngular)+1:numPoints];  
 
 % Plotting
 figure
@@ -74,6 +74,7 @@ plot3(Ws_loc(1, :)', Ws_loc(2, :)', Ws_loc(3, :)', 'r.')
 plot3(Ws_loc(1, border_indices)', Ws_loc(2, border_indices)', Ws_loc(3, border_indices)', 'b.', 'MarkerSize', 10)
 set(gcf,'color','w')
 view(0,0)
+title('Local stable manifold')
 
 lorenzwsloc =  Ws_loc(:,border_indices)'; 
 save('lorenzdiscws.csv','lorenzwsloc', '-ascii');

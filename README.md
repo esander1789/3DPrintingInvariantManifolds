@@ -57,29 +57,35 @@ The `Examples` directory contains implementations and data files for various dyn
 #### Arneodo-Coullet-Tresser
 Implementation of the Arneodo-Coullet-Tresser system
 - `Arneodo_main.m`: Main script for Arneodo system. 
-	- Requires `ArneodoDifferential.m` and `getCoeffsArneodo.m` to run. 
+	- Requires the .m below to run. 
 	- Produces `itstartpoints_arn0863.csv`
 - `ArneodoDifferential.m`: Jacobian for the Arneodo system
 - `ArneodoF.m`: Arneodo system function implementation
 - `getCoeffsArneodo.m`: Function for computing coefficients for the Arneodo system
 - `itstartpoints_arn0863.csv`: CSV data file with starting points
 - `makemanifoldArneodo2.nb`: Mathematica notebook for generating Arneodo manifolds. 
-	- Requires `itstartpoints_arn0863.csv`. 
+	- Requires `itstartpoints_arn0863.csv` to run. 
 	- Produces `Arneodo0863.stl` (or after uncommenting, `Arneodo0863.obj`). 
 
 #### LangfordSystem
 Code for the Langford system, including stable/unstable manifold calculations
-- `TriFundDomES.m`: Triangulate fundamental domain for the Langford system
-- `driver_writepoints.m`: Driver script for writing unstable manifold points for alpha = 1.1022
+- `driver_writepoints_unstable.m`: Driver script for writing unstable manifold points for alpha = 1.1022
 - `driver_writepoints_stable.m`: Driver script for stable manifold calculations for alpha = 1.1022
+	- Both above files require the .m files below to run. 
+	- Produce the corresponding .csv file below. 
+- `TriFundDomES.m`: Triangulate fundamental domain for the Langford system
 - `evaluate_complexCase.m`: Function to evaluate complex case calculations
 - `getCoeffs.m`: Function for computing coefficients for the Langford system
 - `horner.m`: Implementation of Horner's method
-- `itstartpoints11022.csv`: CSV data file with starting points for unstable manifold
+- `itstartpoints11022u.csv`: CSV data file with starting points for unstable manifold
 - `itstartpoints11022s.csv`: CSV data file with starting points for stable manifold
-- `mfdsurf11022.nb`: Mathematica notebook for manifold surface generation
+- `mfdsurf11022u.nb`: Mathematica notebook for manifold surface generation
+	- Requires `itstartpoints11022u.csv`
+	- Produces `mfdsurf11022u.stl` (or .obj file if that line is uncommented).
 - `mfdsurf11022s.nb`: Mathematica notebook for stable manifold surface generation
-
+	- Requires `itstartpoints11022s.csv`
+	- Produces `mfdsurf11022s.stl`
+	
 #### Langford_Miscellaneous
 Miscellaneous files related to the Langford system with various parameter values
 - `itstartpoints700.csv`: CSV data file with starting points for alpha parameter value 0.700
@@ -87,25 +93,37 @@ Miscellaneous files related to the Langford system with various parameter values
 - `itstartpoints9321.csv`: CSV data file with starting points for alpha parameter value 0.9321
 - `itstartpoints950.csv`: CSV data file with starting points for alpha parameter value 0.950
 - `makemanifoldTubeVaryParameter.nb`: Consolidated Mathematica notebook for creating tube-method manifolds with varying parameters
+	- Requires one of the above .csv files to run.
+	- Produces `manifoldTube.stl` 
 - `makemfldSurfaceVaryParameter.nb`: Consolidated Mathematica notebook for creating surface-method manifolds with varying parameters
+	- Requires one of the above .csv files to run.
+	- Produces `manifoldsurface.stl`
 
 #### LorenzManifoldPoints
 Point data and code for Lorenz stable manifold visualizations and 3D printing
-- `LorenzF.m`: Lorenz system function implementation
 - `driver_Lorenz_Disc.m`: Driver script for Lorenz disc computation
+	- Requires the .m files below to run.
+	- Produces `lorenzdiscws.csv`. 
+- `LorenzF.m`: Lorenz system function implementation
 - `getCoeffsLorenz.m`: Function to compute coefficients for the Lorenz system
 - `lorenzDifferential.m`: Jacobian for the Lorenz system
 - `lorenzdiscws.csv`: CSV data file with Lorenz disc points
 - `makelorenzmanifold.nb`: Mathematica notebook for generating scaled Lorenz manifolds
-
+	- Requires `lorenzdiscws.csv` to run. 
+	- Produces `lorenzBIG.stl`. To produce `lorenzBIG.stl`, uncomment the corresponding lines of code.
+- `standBIG.scad`: This OpenSCAD file creates `standBIG.stl`
+- `standSM.scad`:  This OpenSCAD file creates `standSM.stl`
+	
 #### PrintableFiles
 Ready-to-print files for 3D printing manifolds
 - `Langford11022s.stl`: STL file for Langford system stable manifold for alpha = 1.1022
 - `Langford11022u.stl`: STL file for Langford system unstable manifold for alpha = 1.1022
 - `Langford806.stl`: STL file for Langford system with alpha parameter value 0.806
 - `lorenzBIG.stl`: Large-scale STL file for Lorenz stable manifold
+- `standBIG.stl`: STL format file for the stand for use with `lorenzBIG.stl`
 - `lorenzSM.obj`: OBJ format file for Lorenz stable manifold (small version)
 - `lorenzSM.stl`: STL format file for Lorenz stable manifold (small version)
+- `standSM.stl`: STL format file for the stand for use with `lorenzSM.stl`
 
 ## Citing This Work
 If you use our codes or methodology in your research, please cite our paper:

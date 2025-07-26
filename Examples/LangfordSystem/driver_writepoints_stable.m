@@ -93,6 +93,6 @@ the_theta = linspace(0, 2*pi, numTheta);
 
 itstartpoints = Wu_loc';
  
-save(sprintf('itstartpoints11022s.csv'), 'itstartpoints', '-ascii');
+save(sprintf('itstartpoints11022u.csv'), 'itstartpoints', '-ascii');
 
 
