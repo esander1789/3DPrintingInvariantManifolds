@@ -138,4 +138,4 @@ For questions, bug reports, or collaboration inquiries, please use the GitHub is
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-Last updated: March 2025
+Last updated: July 2025
